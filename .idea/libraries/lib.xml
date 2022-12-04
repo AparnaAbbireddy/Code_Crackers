@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Airline-booking-system/out/production/Airline-booking-system/lib/gson-2.8.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Airline-booking-system/out/production/Airline-booking-system/lib/commons-logging-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Airline-booking-system/out/production/Airline-booking-system/lib/fontbox-2.0.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Airline-booking-system/out/production/Airline-booking-system/lib/pdfbox-2.0.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
