@@ -15,9 +15,12 @@ public class Main {
                     "------------------------------------------------------------------------------------------------------------------------------");
             System.out.println(
                     "-------------------------------------------------- 1. Display List of Flights -------------------------------------------------------");
-    
+    		            System.out.println(
+                    "-------------------------------------------------- 2. Search for a flight ----------------------------------------------------");
             System.out.println(
-                    "-------------------------------------------------- 2. Exit and Save ----------------------------------------------");
+                    "-------------------------------------------------- 3. Booking a flight Ticket ----------------------------------------------------------");
+            System.out.println(
+                    "-------------------------------------------------- 4. Exit and Save ----------------------------------------------");
             System.out.println(
                     "------------------------------------------------------------------------------------------------------------------------------");
             System.out.print("Please enter the serial number for required operation from the list of operations:");
@@ -26,8 +29,14 @@ public class Main {
                 case 1:
                     controller.displayFlightsDetails();
                     break;
+		    case 2:
+                    controller.searchForFlight();
+                    break;
+                case 3:
+                    controller.bookTicket();
+                    break;
            
-                case 2:
+                case 4:
                     Gson gson = new Gson();
                     String data = gson.toJson(controller);
                     if (Storage.savingData(data)) {

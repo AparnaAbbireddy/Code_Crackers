@@ -18,7 +18,8 @@ public class Main {
                     "-------------------------------------------------- 1. Display List of Flights -------------------------------------------------------");
             System.out.println(
                     "-------------------------------------------------- 2. Search for a flight ----------------------------------------------------");
-
+		System.out.println(
+                    "-------------------------------------------------- 3. Booking a flight Ticket ----------------------------------------------------------");
             System.out.println(
                     "-------------------------------------------------- 3. Exit and Save ----------------------------------------------");
             System.out.println(
@@ -32,8 +33,10 @@ public class Main {
                 case 2:
                     controller.searchForFlight();
                     break;
-
-                case 3:
+		    case 3:
+                    controller.bookTicket();
+                    break;	
+                case 4:
                     Gson gson = new Gson();
                     String data = gson.toJson(controller);
                     if (Storage.savingData(data)) {
