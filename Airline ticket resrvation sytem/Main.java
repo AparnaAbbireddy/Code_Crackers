@@ -1,4 +1,4 @@
-3import com.google.gson.Gson;
+import com.google.gson.Gson;
 import controllers.BookingController;
 import tools.*;
 
@@ -15,10 +15,9 @@ public class Main {
                     "------------------------------------------------------------------------------------------------------------------------------");
             System.out.println(
                     "-------------------------------------------------- 1. Display List of Flights -------------------------------------------------------");
+    
             System.out.println(
-                    "-------------------------------------------------- 2. Search for a flight ----------------------------------------------------");
-            System.out.println(
-                    "-------------------------------------------------- 3. Exit and Save ----------------------------------------------");
+                    "-------------------------------------------------- 2. Exit and Save ----------------------------------------------");
             System.out.println(
                     "------------------------------------------------------------------------------------------------------------------------------");
             System.out.print("Please enter the serial number for required operation from the list of operations:");
@@ -27,12 +26,8 @@ public class Main {
                 case 1:
                     controller.displayFlightsDetails();
                     break;
+           
                 case 2:
-                    controller.searchForFlight();
-                    break;
-
-                    break;
-                case 3:
                     Gson gson = new Gson();
                     String data = gson.toJson(controller);
                     if (Storage.savingData(data)) {
