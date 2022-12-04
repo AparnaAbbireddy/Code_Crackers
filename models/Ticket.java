@@ -37,6 +37,17 @@ public class Ticket {
         this.passenger = passenger;
     }
 
+    public void displayDetails() {
+        System.out.println("                                                -------------------------------------");
+        System.out.println("                                                   Flight details: ");
+        System.out.println("                                                -------------------------------------");
+        flight.DisplayFlightDetailInTicket();
+        System.out.println("                                                -------------------------------------");
+        System.out.println("                                                   Passenger details: ");
+        System.out.println("                                                -------------------------------------");
+        passenger.DisplayPassengerDetails();
+
+    }
 
     public void printTicketToPdf() {
         try {
